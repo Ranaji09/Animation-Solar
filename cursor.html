@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    html,
+    body {
+        height: 100%;
+        width: 100%;
+    }
+
+    .Main {
+        height: 100%;
+        width: 100%;
+        background-color: rgb(55, 54, 53);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .cursor {
+        height: 40px;
+        width: 40px;
+        background-color: rgb(4, 234, 4);
+        border-radius: 50%;
+        mix-blend-mode: difference;
+        position: absolute;
+        transition: 0.5s;
+    }
+
+    h1 {
+        font-size: 10vw;
+        font-weight: 900;
+        text-decoration: underline;
+    }
+</style>
+
+<body>
+    <div class="Main">
+        <div class="cursor">
+        </div>
+        <h1>Yamraj Gaming 04</h1>
+
+    </div>
+</body>
+<script>
+    let main = document.querySelector(".Main")
+    let cur = document.querySelector(".cursor")
+
+    main.addEventListener("mousemove", function (ds) {
+        cur.style.left = ds.x + "px"
+        cur.style.top = ds.y + "px"
+    })
+</script>
+
+</html>

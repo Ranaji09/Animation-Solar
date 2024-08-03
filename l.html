@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="shortcut icon" href="channels4_profile.jpg" type="image/x-icon">
+     <title>LOVE OPTIONS</title>
+     <style>
+          * {
+               padding: 0%;
+               margin: 0%;
+               box-sizing: border-box;
+          }
+
+          body {
+               background-color: rgb(160, 200, 187);
+               max-width: 60%;
+               max-height: 60%;
+          }
+
+          .main {
+               margin: auto;
+               border-radius: 10px;
+               height: 300px;
+               text-align: center;
+               margin-top: 20px;
+               width: 500px;
+          }
+
+          .bod {
+               margin: auto;
+               height: 100px;
+               width: 450px;
+               margin-top: 30px;
+          }
+
+          button {
+               height: 50px;
+               box-sizing: 2px 2px 2px red;
+               font-weight: bold;
+               margin-top: 20px;
+               background-color: darkgray;
+               font-size: 30px;
+               border-radius: 12px;
+               width: 150px;
+               color: black;
+          }
+
+          .bt {
+               position: absolute;
+               left: 50%;
+          }
+
+          .btn {
+               position: fixed;
+               margin-top: 20px;
+               height: 50px;
+               width: 130px;
+               margin-left: -140px;
+          }
+
+          img {
+               height: 320px;
+               width: 320px;
+          }
+
+          video {
+               height: 100%;
+               width: 100%;
+               position: absolute;
+          }
+
+
+          h1 {
+               left: 0px;
+               margin-top: 40px;
+               right: 0px;
+               font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+               font-size: 40px;
+               text-shadow: 2px 2px rgb(172, 99, 99);
+          }
+     </style>
+</head>
+
+
+<body>
+     <div class="main">
+          <div class="bod">
+               <h1>Do You Love Me ? ❤️❤️</h1>
+
+
+               <button class="btn">YES</button>
+               <img src="heart-5660816_1280.webp" alt="img" class="img">
+               <!-- <video src="hart.mp4" autoplay controls loop></video> -->
+               <button class="bt">NO</button>
+          </div>
+     </div>
+</body>
+<script>
+     let r = document.querySelector(".btn")
+     let i = document.querySelector(".img")
+
+     r.addEventListener("click", function () {
+          alert("I LOVE YOU TOO  BABY AND YOU ARE MY HEARTBEAT ❤️❤️")
+     })
+
+
+     document.addEventListener("DOMContentLoaded", function () {
+          var n = document.querySelector(".bt");
+          n.addEventListener("mouseover", function () {
+               var maxX = window.innerWidth - n.offsetWidth;
+               var maxY = window.innerHeight - n.offsetHeight;
+
+               var randomX = Math.floor(Math.random() * maxX)
+               var randomY = Math.floor(Math.random() * maxY)
+
+               n.style.left = randomX + 'px';
+               n.style.top = randomY + 'px';
+          })
+
+     })
+
+
+
+</script>
+
+</html>
